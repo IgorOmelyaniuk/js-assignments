@@ -29,7 +29,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(concatenateStrings, 1);
   });
 
-  it.optional('getStringLength should return the length of string', () => {
+  it('getStringLength should return the length of string', () => {
     assert.equal(getStringLength('aaaaa'), 5, "'aaaaa' length should be 5");
     assert.equal(getStringLength(''), 0, "'' length should be 0");
     assert.linesOfCode(getStringLength, 1);
