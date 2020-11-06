@@ -22,7 +22,7 @@ const {
 it.optional = require('../extensions/it-optional');
 
 describe('01-strings-tasks', () => {
-  it.optional('concatenateStrings should return concatenation of two strings', () => {
+  it('concatenateStrings should return concatenation of two strings', () => {
     assert.equal(concatenateStrings('aa', 'bb'), 'aabb');
     assert.equal(concatenateStrings('aa', ''), 'aa');
     assert.equal(concatenateStrings('', 'bb'), 'bb');
@@ -136,9 +136,9 @@ describe('01-strings-tasks', () => {
   it.optional('isString should return true if argument ia a string', () => {
     assert.equal(isString(), false, 'undefined');
     assert.equal(isString(null), false, 'null');
-    assert.equal(isString([]), false,  '[]');
+    assert.equal(isString([]), false, '[]');
     assert.equal(isString('test'), true, 'test');
-    assert.equal(isString(new String('test')), true,  "new String('test')");
+    assert.equal(isString(new String('test')), true, "new String('test')");
     assert.linesOfCode(isString, 1);
   });
 
