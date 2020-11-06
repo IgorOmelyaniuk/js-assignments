@@ -35,7 +35,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(getStringLength, 1);
   });
 
-  it.optional('getStringFromTemplate should create a string from template using given parameters', () => {
+  it('getStringFromTemplate should create a string from template using given parameters', () => {
     assert.equal(getStringFromTemplate('John', 'Doe'), 'Hello, John Doe!');
     assert.equal(getStringFromTemplate('Chuck', 'Norris'), 'Hello, Chuck Norris!');
     assert.linesOfCode(getStringFromTemplate, 1);
