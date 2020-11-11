@@ -41,13 +41,13 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(getStringFromTemplate, 1);
   });
 
-  it.optional('getFirstChar should return the first char from given string', () => {
+  it('getFirstChar should return the first char from given string', () => {
     assert.equal(getFirstChar('John Doe'), 'J');
     assert.equal(getFirstChar('cat'), 'c');
     assert.linesOfCode(getFirstChar, 1);
   });
 
-  it.optional('extractNameFromTemplate should parse the name from given string', () => {
+  it('extractNameFromTemplate should parse the name from given string', () => {
     assert.equal(extractNameFromTemplate('Hello, John Doe!'), 'John Doe');
     assert.equal(extractNameFromTemplate('Hello, Chuck Norris!'), 'Chuck Norris');
     assert.linesOfCode(extractNameFromTemplate, 1);
