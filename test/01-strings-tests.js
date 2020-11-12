@@ -53,14 +53,14 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(extractNameFromTemplate, 1);
   });
 
-  it.optional('removeLeadingAndTrailingWhitespaces should remove leading and trailing whitespaces from the string', () => {
+  it('removeLeadingAndTrailingWhitespaces should remove leading and trailing whitespaces from the string', () => {
     assert.equal(removeLeadingAndTrailingWhitespaces('  Abracadabra'), 'Abracadabra');
     assert.equal(removeLeadingAndTrailingWhitespaces('cat'), 'cat');
     assert.equal(removeLeadingAndTrailingWhitespaces('\tHello, World! '), 'Hello, World!');
     assert.linesOfCode(removeLeadingAndTrailingWhitespaces, 1);
   });
 
-  it.optional('repeatString should repeat string specified number of times', () => {
+  it('repeatString should repeat string specified number of times', () => {
     assert.equal(repeatString('A', 5), 'AAAAA');
     assert.equal(repeatString('cat', 3), 'catcatcat');
     assert.linesOfCode(repeatString, 1);
@@ -73,20 +73,20 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(removeFirstOccurrences, 1);
   });
 
-  it.optional('unbracketTag should remove first and last angle brackets from tag string', () => {
+  it('unbracketTag should remove first and last angle brackets from tag string', () => {
     assert.equal(unbracketTag('<div>'), 'div');
     assert.equal(unbracketTag('<span>'), 'span');
     assert.equal(unbracketTag('<a>'), 'a');
     assert.linesOfCode(unbracketTag, 1);
   });
 
-  it.optional('convertToUpperCase should convert all chars from specified string into upper case', () => {
+  it('convertToUpperCase should convert all chars from specified string into upper case', () => {
     assert.equal(convertToUpperCase('Thunderstruck'), 'THUNDERSTRUCK');
     assert.equal(convertToUpperCase('abcdefghijklmnopqrstuvwxyz'), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     assert.linesOfCode(convertToUpperCase, 1);
   });
 
-  it.optional('extractEmails should extract emails from string list delimeted by semicolons', () => {
+  it('extractEmails should extract emails from string list delimeted by semicolons', () => {
     assert.deepEqual(
       extractEmails('angus.young@gmail.com;brian.johnson@hotmail.com;bon.scott@yahoo.com'),
       ['angus.young@gmail.com', 'brian.johnson@hotmail.com', 'bon.scott@yahoo.com']
@@ -98,7 +98,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(extractEmails, 1);
   });
 
-  it.optional('getRectangleString should return the string reprentation of rectangle with specified size', () => {
+  it('getRectangleString should return the string reprentation of rectangle with specified size', () => {
     assert.equal(
       getRectangleString(6, 4),
       '┌────┐\n' +
@@ -120,7 +120,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(getRectangleString, 4);
   });
 
-  it.optional('encodeToRot13 should encode-decode string using ROT13 algorithm', () => {
+  it('encodeToRot13 should encode-decode string using ROT13 algorithm', () => {
     assert.equal(encodeToRot13('hello'), 'uryyb');
     assert.equal(
       encodeToRot13('Why did the chicken cross the road?'),
@@ -142,7 +142,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(isString, 1);
   });
 
-  it.optional('getCardId should return the index of card in the initial deck', () => {
+  it('getCardId should return the index of card in the initial deck', () => {
     [
       'A♣', '2♣', '3♣', '4♣', '5♣', '6♣', '7♣', '8♣', '9♣', '10♣', 'J♣', 'Q♣', 'K♣',
       'A♦', '2♦', '3♦', '4♦', '5♦', '6♦', '7♦', '8♦', '9♦', '10♦', 'J♦', 'Q♦', 'K♦',
