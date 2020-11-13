@@ -223,12 +223,12 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(str) {
-  let unicode = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  const unicode = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
   return str.split('').map(item => {
     if (item === ' ') return item = ' ';
     if (item === '!') return item = '!';
     if (item === '?') return item = '?';
-    let indexItem = unicode.indexOf(item);
+    const indexItem = unicode.indexOf(item);
     return item = unicode[indexItem + 13];
   }).join('');
 }
