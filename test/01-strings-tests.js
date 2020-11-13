@@ -142,7 +142,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(isString, 1);
   });
 
-  it('getCardId should return the index of card in the initial deck', () => {
+  it.optional('getCardId should return the index of card in the initial deck', () => {
     [
       'A♣', '2♣', '3♣', '4♣', '5♣', '6♣', '7♣', '8♣', '9♣', '10♣', 'J♣', 'Q♣', 'K♣',
       'A♦', '2♦', '3♦', '4♦', '5♦', '6♦', '7♦', '8♦', '9♦', '10♦', 'J♦', 'Q♦', 'K♦',
