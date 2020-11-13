@@ -223,7 +223,8 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(str) {
-  const unicode = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  const unicode = `ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+  abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz`;
   return str.split('').map(item => {
     if (item === ' ') return item = ' ';
     if (item === '!') return item = '!';
