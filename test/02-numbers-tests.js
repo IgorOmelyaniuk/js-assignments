@@ -17,20 +17,20 @@ const {
 it.optional = require('../extensions/it-optional');
 
 describe('02-numbers-tasks', () => {
-  it.optional('getRectangleArea should return a square of rectangle', () => {
+  it('getRectangleArea should return a square of rectangle', () => {
     assert.equal(getRectangleArea(5, 10), 50);
     assert.equal(getRectangleArea(5, 5), 25);
     assert.linesOfCode(getRectangleArea, 1);
   });
 
-  it.optional('getCicleCircumference should return a circumference of cicle', () => {
+  it('getCicleCircumference should return a circumference of cicle', () => {
     assert.equal(getCicleCircumference(5), 31.41592653589793);
     assert.equal(getCicleCircumference(3.14), 19.729201864543903);
     assert.equal(getCicleCircumference(0), 0);
     assert.linesOfCode(getCicleCircumference, 1);
   });
 
-  it.optional('getAverage should return an average of two numbers', () => {
+  it('getAverage should return an average of two numbers', () => {
     assert.equal(getAverage(5, 5), 5);
     assert.equal(getAverage(10, 0), 5);
     assert.equal(getAverage(-3, 3), 0);
@@ -39,7 +39,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(getAverage, 1);
   });
 
-  it.optional('getDistanceBetweenPoints should return a distance between points', () => {
+  it('getDistanceBetweenPoints should return a distance between points', () => {
     assert.equal(getDistanceBetweenPoints(0, 0, 0, 1), 1);
     assert.equal(getDistanceBetweenPoints(0, 0, 1, 0), 1);
     assert.equal(getDistanceBetweenPoints(-5, 0, 10, -10), 18.027756377319946);
