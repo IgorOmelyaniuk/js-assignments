@@ -47,7 +47,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(getDistanceBetweenPoints, 1);
   });
 
-  it.optional('getLinearEquationRoot should return a root of linear equation', () => {
+  it('getLinearEquationRoot should return a root of linear equation', () => {
     assert.equal(getLinearEquationRoot(5, -10), 2);
     assert.equal(getLinearEquationRoot(1, 8), -8);
     assert.equal(getLinearEquationRoot(5, 0), 0);
