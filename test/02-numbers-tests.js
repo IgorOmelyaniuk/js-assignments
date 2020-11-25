@@ -77,7 +77,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(parseNumberFromString, 1);
   });
 
-  it.optional('getParallelipidedDiagonal should return a diagonal length of the rectagular parallepiped', () => {
+  it('getParallelipidedDiagonal should return a diagonal length of the rectagular parallepiped', () => {
     assert.equal(getParallelipidedDiagonal(1, 1, 1), Math.sqrt(3));
     assert.equal(getParallelipidedDiagonal(3, 3, 3), Math.sqrt(27));
     assert.equal(
