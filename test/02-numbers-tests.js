@@ -70,7 +70,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(getLastDigit, 1);
   });
 
-  it.optional('parseNumberFromString should return a number from the given string representation', () => {
+  it('parseNumberFromString should return a number from the given string representation', () => {
     assert.strictEqual(parseNumberFromString('100'), 100);
     assert.strictEqual(parseNumberFromString('37'), 37);
     assert.strictEqual(parseNumberFromString('-525.5'), -525.5);
