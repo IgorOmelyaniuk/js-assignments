@@ -87,7 +87,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(getParallelipidedDiagonal, 1);
   });
 
-  it.optional('roundToPowerOfTen should return an number rounded to specified power of 10', () => {
+  it('roundToPowerOfTen should return an number rounded to specified power of 10', () => {
     assert.equal(roundToPowerOfTen(1234, 0), 1234);
     assert.equal(roundToPowerOfTen(1234, 1), 1230);
     assert.equal(roundToPowerOfTen(1234, 2), 1200);
