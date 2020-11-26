@@ -120,7 +120,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(isPrime, 9);
   });
 
-  it.optional('toNumber should convert any value to number or return the default', () => {
+  it('toNumber should convert any value to number or return the default', () => {
     assert.strictEqual(toNumber(null, 0), 0);
     assert.strictEqual(toNumber('test', 0), 0);
     assert.strictEqual(toNumber('1', 0), 1);

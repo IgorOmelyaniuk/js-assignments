@@ -218,13 +218,13 @@ function isPrime(n) {
  *
  * @example
  *   toNumber(null, 0) => 0
- *   toNumber('test', 0) => 0
+ *   toNumber('test', 0) => 0  
  *   toNumber('1', 0) => 1
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-  throw new Error('Not implemented');
+  return (+value === Number(value)) ? +value : def;
 }
 
 module.exports = {
