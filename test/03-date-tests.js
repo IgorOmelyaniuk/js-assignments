@@ -10,7 +10,7 @@ const {
 it.optional = require('../extensions/it-optional');
 
 describe('03-date-tasks', () => {
-  it.optional('parseDataFromRfc2822 should parse rfc2822 string into a date value', () => {
+  it('parseDataFromRfc2822 should parse rfc2822 string into a date value', () => {
     assert.equal(
       parseDataFromRfc2822('December 17, 1995 03:24:00').valueOf(),
       new Date(1995, 11, 17, 3, 24, 0).valueOf()
