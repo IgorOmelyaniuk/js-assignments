@@ -30,7 +30,7 @@ describe('03-date-tasks', () => {
   });
 
 
-  it.optional('parseDataFromIso8601 should parse ISO 8601 string into a date value', () => {
+  it('parseDataFromIso8601 should parse ISO 8601 string into a date value', () => {
     assert.equal(
       parseDataFromIso8601('2016-01-19T16:07:37+00:00').valueOf(),
       1453219657000
