@@ -101,7 +101,7 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(roundToPowerOfTen, 2);
   });
 
-  it.optional('isPrime should return true if specified number is prime', () => {
+  it('isPrime should return true if specified number is prime', () => {
     assert.equal(isPrime(1), false, '1');
     assert.equal(isPrime(2), true, '2');
     assert.equal(isPrime(3), true, '3');
