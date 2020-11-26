@@ -45,7 +45,7 @@ describe('03-date-tasks', () => {
   });
 
 
-  it.optional('isLeapYear should true if specified year is leap', () => {
+  it('isLeapYear should true if specified year is leap', () => {
     [
       new Date(2000, 1, 1),
       new Date(2012, 1, 1)
