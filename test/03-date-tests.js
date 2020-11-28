@@ -70,7 +70,7 @@ describe('03-date-tasks', () => {
   });
 
 
-  it.optional('timeSpanToString should return the string represation of time span between two dates', () => {
+  it('timeSpanToString should return the string represation of time span between two dates', () => {
     [
       {
         startDate: new Date(2000, 1, 1, 10, 0, 0),
