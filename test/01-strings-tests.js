@@ -66,7 +66,7 @@ describe('01-strings-tasks', () => {
     assert.linesOfCode(repeatString, 1);
   });
 
-  it.optional('removeFirstOccurrences should remove all specified values from a string', () => {
+  it('removeFirstOccurrences should remove all specified values from a string', () => {
     assert.equal(removeFirstOccurrences('To be or not to be', ' not'), 'To be or to be');
     assert.equal(removeFirstOccurrences('I like legends', 'end'), 'I like legs');
     assert.equal(removeFirstOccurrences('ABABAB', 'BA'), 'ABAB');
