@@ -54,7 +54,8 @@ describe('02-numbers-tasks', () => {
     assert.linesOfCode(getLinearEquationRoot, 1);
   });
 
-  it.optional('getAngleBetweenVectors should return a angle (in radians) between two linear vectors', () => {
+  // .optional
+  it('getAngleBetweenVectors should return a angle (in radians) between two linear vectors', () => {
     assert.equal(getAngleBetweenVectors(1, 0, 0, 1), Math.PI / 2);
     assert.equal(getAngleBetweenVectors(0, 1, 0, -1), Math.PI);
     assert.equal(getAngleBetweenVectors(0, -1, 1, 0), Math.PI / 2);
